@@ -16,8 +16,29 @@ create table example_table(
     example_column2 boolean
 )
 
+-- 컬럼 데이터 타입 
+Create Table data_type(
+	-- INT : 정수 타입 
+    int_column INT,
+	-- DOUBLE : 실수 타입
+    double_column DOUBLE,
+    -- FLOAT : 실수 타입,
+    float_column FLOAT,
+    -- BOOLEAN : 논리타입
+    boolean_column BOOLEAN,
+    -- VARCHAR(문자열 길이) : 가변문자열
+    string_column VARCHAR(10),
+    -- TEXT : 단순 장문 문자열
+    text_column TEXT,
+    -- DATE : 날짜
+    date_column DATE,
+    -- DATETIME : 날짜 및 시간
+    datetime_column DATETIME
+);
+
+
 -- 사용자 생성
--- CREATE USER '사용자명'@'접속ip' IDENTIFIED BY '비밀번호'
+-- CREATE USER '사용자명'@'접속 ip' IDENTIFIED BY '비밀번호'
 create user 'developer'@'127.0.0.1' IDENTIFIED BY 'P!ssw0rd';
 create user 'developer'@'192.168.70.23' IDENTIFIED BY 'P!ssw0rd';
 create user 'developer'@'%' identified by 'P!ssw0rd';
