@@ -36,3 +36,18 @@ DELETE FROM example_table WHERE column1 = '수정데이터';
 
 -- DELETE FROM 테이블명;
 DELETE FROM example_table;
+
+CREATE TABLE auto_table(
+	idx INT PRIMARY KEY AUTO_INCREMENT,
+    num INT
+);
+
+INSERT INTO auto_table (num) VALUE (0);
+SELECT * FROM auto_table;
+
+DELETE FROM auto_table; 
+TRUNCATE TABLE auto_table; -- 테이터의 구조를 아예 처음으로 돌리는것
+
+-- DROP TABLE : DDL 테이블 구조 전체를 제거
+-- TRUNCATE TABLE : DDL 테이블 구조만 남기고 상태를 초기화합니다.
+-- DELETE FROM : DML 테이블 레코드만 제거
